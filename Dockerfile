@@ -12,7 +12,7 @@ RUN apt-get install -y curl wget git zip bzip2 fontconfig python g++ build-essen
 
 # Install node.js
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash && \
-  apt-get install -y nodejs && \
+  apt-get install -y nodejs
 
 # Cleanup
 RUN apt-get clean && \
