@@ -1,4 +1,4 @@
-FROM       openjdk:8u111-jdk-alpine
+FROM       picoded/ubuntu-openjdk-8-jdk
 MAINTAINER bluebiz Team <info@bluebiz.de>
 
 # Install utils: curl, build stuff etc.
