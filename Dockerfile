@@ -1,5 +1,11 @@
-FROM       picoded/ubuntu-openjdk-8-jdk
+FROM       ubuntu:xenial
 MAINTAINER bluebiz Team <info@bluebiz.de>
+
+# Update apt
+RUN apt-get update
+
+# Install jdk 8
+RUN  apt-get install -y openjdk-8-jdk
 
 # Install utils: curl, build stuff etc.
 RUN apt-get install -y curl wget git zip bzip2 fontconfig python g++ build-essential
