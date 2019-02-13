@@ -8,8 +8,8 @@ RUN apt-get update
 RUN apt-get install -y curl zip bzip2 fontconfig python g++ build-essential
 
 # Install node.js
-RUN curl -sL https://deb.nodesource.com/setup_6.x | bash && \
-  apt-get install -y nodejs
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash && \
+  apt-get install -y nodejs  
 
 # Cleanup
 RUN apt-get clean && \
