@@ -5,7 +5,7 @@ MAINTAINER bluebiz Team <info@bluebiz.de>
 RUN apt-get update
 
 # Install utils: curl, build stuff etc.
-RUN apt-get install -y curl zip bzip2 fontconfig python g++ build-essential
+RUN apt-get install -y curl zip bzip2 fontconfig python g++ build-essential libpng-dev
 
 # Install node.js
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash && \
